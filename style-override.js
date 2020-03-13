@@ -227,9 +227,9 @@ const generateOverride = (params) => {
   }
 
   // 目录
-  if (params.indexColor) {
+  if (params.titleColor) {
     result += `.markdownIt-TOC a {
-      color: ${params.indexColor};
+      color: ${params.titleColor};
       border-bottom-color: ${params.indexColor};
     }`
   } else {
@@ -243,10 +243,10 @@ const generateOverride = (params) => {
     }`
   }
 
-  if (params.indexHoverColor) {
+  if (params.linkHoverColor) {
     result += `.markdownIt-TOC a:hover {
-      color: ${params.indexHoverColor};
-      border-bottom-color: ${params.indexHoverColor};
+      color: ${params.linkHoverColor};
+      border-bottom-color: ${params.indexColor};
     }`
   } else {
     let colorStr = '#000';

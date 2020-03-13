@@ -20,7 +20,7 @@
               <%- include('./_blocks/title', { title: post.title, tags: post.tags, link: post.link, dateFormat: post.dateFormat, stats: post.stats, isTop: post.isTop, browse: site.customConfig.visitor }) %>
               <div class="post-body next-md-body" id="post_body">
                 <figure data-type="image" class="post-feature">
-                  <img src="<%- post.feature %>" alt="" loading="lazy">
+                  <img src="<%- post.feature %>" alt="">
                 </figure>
                 <%- post.content %>
               </div>
